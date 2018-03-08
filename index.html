@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>vue-demo</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/dist/build.js"></script>
+    <script>
+      console.log(0 == '') // true
+      console.log([] == false) // true
+      // ！的运算优先级高于 ===
+      console.log([] == ![]) // true  [] 转换成了''空字符串 而后面的转换成了
+      console.log(![]) // false
+    </script>
+  </body>
+</html>
